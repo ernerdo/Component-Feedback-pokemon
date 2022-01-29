@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap');
+
+:root {
+  --gray: #C8C6C6;
+  --red: #CD1818;  
+  --white: #FFFFFF;  
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+ font-size: 62.5%;
+ font-family: 'Nunito', sans-serif;
+
+}
+
+body {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  min-height: 100vh;
+}
+
+.modal {
+  background: var(--red);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  width: 80%;
+  height: 100%;
+}
+
+.main-image {
+  margin-top: -50%;
+  width: 80%;
+}
+
+.logo_1{
+    border:2px solid black;
+    border-radius:60%;
+}
+
+
+.title {
+  color: var(--white);
+  font-size: 2.6rem;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.subtitle {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+
+.stars-container {
+    margin-bottom:5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .gray-stars-container {
+      position: relative;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .gray-stars-container img {
+    padding: 0.1rem;
+    flex: 1 1 auto;
+  }
+  
+  .yellow-stars-container {
+    cursor: pointer;
+    position: absolute;  
+    display: flex;
+    justify-content: flex-start;
+    gap:0%;
+  }
+
+  .yellow-stars-container img {
+      padding: 0.1rem;
+      flex: 1 1 auto;
+  }
+
+.comment-box {
+  height: 0;
+  text-align: center; 
+}
+
+.comment-box label {
+  color: var(--white);
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.comment-box textarea {
+  background: none;
+  border: 1px solid white;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: var(--white);
+  display: inline-block;
+  height: 80px;
+  margin-bottom: 24px;
+  padding: 12px;
+  width: 100%;
+}
+
+.comment-box textarea::placeholder {
+  color: var(--gray);
+}
+
+.submit-button {
+  background: var(--white);
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 2.4rem;
+  padding: 8px;
+  width: 100%;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inline-block;
+  animation: visible 0.3s ease-in-out forwards;
+}
+
+@keyframes visible {
+  from {
+    height: 0;
+  }
+  to {
+    height: 138px;
+  }
+}
