@@ -65,29 +65,28 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-  }
-  .gray-stars-container {
+}
+.gray-stars-container {
       position: relative;
     display: flex;
     justify-content: flex-start;
-  }
-  .gray-stars-container img {
+}
+.gray-stars-container img {
     padding: 0.1rem;
     flex: 1 1 auto;
-  }
+}
   
-  .yellow-stars-container {
+.yellow-stars-container {
     cursor: pointer;
     position: absolute;  
     display: flex;
     justify-content: flex-start;
     gap:0%;
-  }
-
-  .yellow-stars-container img {
+}
+.yellow-stars-container img {
       padding: 0.1rem;
       flex: 1 1 auto;
-  }
+}
 
 .comment-box {
   height: 0;
